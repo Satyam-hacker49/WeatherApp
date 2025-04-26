@@ -1,0 +1,101 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.nav_bar{
+    height:9.9vh;
+}
+.nav_bar .navbar {
+    background-color: rgb(49, 130, 144) ;
+    color:aliceblue;
+    }
+.logo{
+    font-size:2rem;
+    color:antiquewhite;
+    padding:0px 10px;
+}
+.search_bar .navbar {
+    background-color:rgb(49, 130, 144) !important; 
+    color: white;
+  }
+  
+ .search_bar .btn{
+    color:white;
+    border-color: black;
+  }
+  .search_bar .btn:hover{
+    color:white;
+    border-color: black;
+    background-color: rgb(114, 234, 140);
+  }
+
+  /* content */
+
+  .content{
+    position: relative;
+    margin:0px 0px;
+    color:#f0f8ff;
+    padding:0px 0px;
+    height:100vh;
+
+
+    flex: 1;
+    overflow-y: auto;
+    background-image: url("Weather.png");
+    background-size: cover;
+    background-position: center;
+     }
+
+     /* cards */
+
+    .cards_group{
+        margin:100px;
+        background-color:rgb(144, 222, 234) ;
+        height:70vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+         }
+    .cards_group .card{
+        width:30%;
+        background-color: white;
+        height:50vh;
+    }
+    .upper_card{
+        display:flex;
+        align-items: center;
+        font-size: 30px;
+        box-sizing: border-box;
+        border:5px solid black;
+        margin:0;
+        
+    }
+    .card_img{
+        height:100%;
+        width:100px;
+    }
+    .card_para{
+        padding:0px 30px;
+    }
+
+    .lower_card p{
+        padding:30px;
+        font-size:25px;
+        display:flex;
+        justify-content: center;
+    }
+ 
+
+  
+/* footer */
+
+  .footer{
+    background-color:rgb(49, 130, 144) ;
+    color:white;
+    margin:0;
+    height:10vh;
+    font-size:20px;
+    display:flex;
+    justify-content: center;
+
+  }
