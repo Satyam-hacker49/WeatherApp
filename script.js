@@ -16,13 +16,17 @@ async function fetchWeather(city){
         const result = await response.json();
         console.log(result);
 
-        const temperature = result.data.current_condition[0].FeelsLikeC;
+        const temperature = result.data.current_condition[0].temp_C;
         const humidity = result.data.current_condition[0].humidity;
         const wind = result.data.current_condition[0].windspeedKmph;
+        const feelsLikeC = result.data.current_condition[0].FeelsLikeC;
+        const uvIndex = result.data.current_condition[0].uvIndex;
 
-     document.getElementById('temperature').innerText = `Temperature: ${temperature}°C`;
-     document.getElementById('humidity').innerText = `Humidity: ${humidity}%`;
-     document.getElementById('windspeed').innerText = `Wind: ${wind}Km/h`;
+     document.getElementById('temperature').innerText = ` ${temperature}°C`;
+     document.getElementById('humidity').innerText = ` ${humidity}%`;
+     document.getElementById('windspeed').innerText = ` ${wind}Km/h`;
+     document.getElementById('feelslk').innerText = ` ${feelsLikeC}°C`;
+     document.getElementById('uvindex').innerText = ` ${uvIndex}`;
 
     } catch (error) {
         console.error(error);
