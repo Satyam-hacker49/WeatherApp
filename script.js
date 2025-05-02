@@ -2,6 +2,8 @@
 
 async function fetchWeather(city){
 
+    document.getElementById('card_para').innerText = `${city}`;
+
     const url = `https://world-weather-online-api1.p.rapidapi.com/weather.ashx?q=${city}&num_of_days=3&tp=1&lang=en&aqi=yes&alerts=no&format=json`;
     const options = {
         method: 'GET',
@@ -22,11 +24,11 @@ async function fetchWeather(city){
         const feelsLikeC = result.data.current_condition[0].FeelsLikeC;
         const uvIndex = result.data.current_condition[0].uvIndex;
 
-     document.getElementById('temperature').innerText = ` ${temperature}°C`;
-     document.getElementById('humidity').innerText = ` ${humidity}%`;
-     document.getElementById('windspeed').innerText = ` ${wind}Km/h`;
-     document.getElementById('feelslk').innerText = ` ${feelsLikeC}°C`;
-     document.getElementById('uvindex').innerText = ` ${uvIndex}`;
+        document.getElementById('temperature').innerText = ` ${temperature}°C`;
+        document.getElementById('humidity').innerText = ` ${humidity}%`;
+        document.getElementById('windspeed').innerText = ` ${wind}Km/h`;
+        document.getElementById('feelslk').innerText = ` ${feelsLikeC}°C`;
+        document.getElementById('uvindex').innerText = ` ${uvIndex}`;
 
     } catch (error) {
         console.error(error);

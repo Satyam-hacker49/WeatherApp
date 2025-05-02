@@ -28,6 +28,14 @@ div.nav_bar{
     background-color: rgb(43, 202, 210);
   }
 
+  #weather-mood{
+    font-size: 20px;
+    margin:0px 4px;
+  }
+  #temperature{
+    font-size: 70px;
+  }
+
   /* content */
 
   .content{
@@ -55,13 +63,16 @@ div.nav_bar{
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+       
          }
 
     .cards_group .card{
         width:65%;
         background-color: rgb(114, 206, 245);
         color:white;
-        height:80vh;
+        height:82vh;
+        border:2px solid black;
+        border-radius:20px;
     }
 
     /* upper card part */
@@ -71,7 +82,6 @@ div.nav_bar{
         justify-content: space-around;
         font-size: 30px;
         box-sizing: border-box;
-        border:5px solid black;
         margin:0;
         height:18vh;
 
@@ -79,11 +89,11 @@ div.nav_bar{
     }
     .card_img{
         height:100%;
-        width:100px;
+        width:140px;
     }
-    .card_para{
+    /* .card_para{
         padding:0px 30px;
-    }
+    } */
 
      /* middle card part */
      .middle_card{
@@ -110,15 +120,25 @@ div.nav_bar{
         
      }
 
+     .mdlImg{
+        height:80px;
+        width:100px;
+    }
+
      /* lower card part */
 
      .lower_card{
         background-color: rgb(46, 213, 31) ;
-        height:32vh;
+        height:34vh;
+     }
+
+     .hourly_forecast{
+       
         display: flex;
         justify-content: space-around;
         align-items:center;
         flex-wrap: wrap;
+        width:100%;
      }
 
     .lower_card p{
@@ -128,10 +148,10 @@ div.nav_bar{
         
     }
 
-    .hourly_forecast{
+    .hourly_item{
         background-color: rgb(234, 30, 180) ;
-        height:20vh;
-        width:20%;
+        height:23vh;
+        width:15%;
         margin:10px ;
         border:2px solid rgba(18, 177, 230, 0.502);
         border-radius: 20px;
@@ -140,7 +160,13 @@ div.nav_bar{
         justify-content: space-around;
         align-items:center;
         flex-direction: column;
+        
 
+    }
+
+    .lwrImg{
+        height:10vh;
+        width:70%;
     }
  
 
