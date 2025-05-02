@@ -111,11 +111,36 @@ div.nav_bar{
      }
 
      /* lower card part */
+
+     .lower_card{
+        background-color: rgb(46, 213, 31) ;
+        height:32vh;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-wrap: wrap;
+     }
+
     .lower_card p{
         font-size:25px;
-        display:flex;
         padding:0px 7px;
+       
         
+    }
+
+    .hourly_forecast{
+        background-color: rgb(234, 30, 180) ;
+        height:20vh;
+        width:20%;
+        margin:10px ;
+        border:2px solid rgba(18, 177, 230, 0.502);
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction: column;
+
     }
  
 
