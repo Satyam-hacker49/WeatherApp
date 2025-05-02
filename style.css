@@ -57,10 +57,10 @@ div.nav_bar{
         flex-wrap: wrap;
          }
     .cards_group .card{
-        width:30%;
+        width:60%;
         background-color: rgb(114, 206, 245);
         color:white;
-        height:50vh;
+        height:70vh;
     }
     .upper_card{
         display:flex;
