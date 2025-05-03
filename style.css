@@ -19,13 +19,13 @@ div.nav_bar{
   }
   
  .search_bar .btn{
-    color:white;
+    background-color: #00bcd4;
     border-color: black;
   }
   .search_bar .btn:hover{
     color:white;
     border-color: black;
-    background-color: rgb(43, 202, 210);
+    background-color: #0097a7;
   }
 
   #weather-mood{
@@ -63,7 +63,7 @@ div.nav_bar{
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-       
+        
          }
 
     .cards_group .card{
@@ -72,8 +72,8 @@ div.nav_bar{
         color:white;
         height:82vh;
         border:2px solid black;
-        border-radius:20px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius:20px;
     }
 
     /* upper card part */
@@ -86,6 +86,9 @@ div.nav_bar{
         margin:0;
         height:18vh;
         padding-right: 25px;
+        border-radius:20px;
+
+        background-color: #4da2af;
 
         
     }
@@ -101,6 +104,9 @@ div.nav_bar{
         padding-left: 25px;
       }
       
+      #temperature{
+        color: #FFD700; 
+      }
 
      /* middle card part */
      .middle_card{
@@ -212,8 +218,26 @@ div.nav_bar{
     font-size:20px;
     display:flex;
     justify-content: center;
-
+    text-align: center;
+     padding: 20px;
   }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

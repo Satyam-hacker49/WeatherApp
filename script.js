@@ -2,6 +2,11 @@
 
 async function fetchWeather(city){
 
+    function capitalizeFirstLetter(city) {
+        return city.charAt(0).toUpperCase() + city.slice(1).toLowerCase();
+    }
+    let formattedCity = capitalizeFirstLetter(city);
+
     const url = `https://world-weather-online-api1.p.rapidapi.com/weather.ashx?q=${city}&num_of_days=3&tp=1&lang=en&aqi=yes&alerts=no&format=json`;
     const options = {
         method: 'GET',
@@ -16,7 +21,7 @@ async function fetchWeather(city){
         const result = await response.json();
         console.log(result);
 
-        document.getElementById('card_para').innerText = `${city}`;
+        document.getElementById('card_para').innerText = `${formattedCity}`;
 
         const temperature = result.data.current_condition[0].temp_C;
         const humidity = result.data.current_condition[0].humidity;
