@@ -2,8 +2,6 @@
 
 async function fetchWeather(city){
 
-    document.getElementById('card_para').innerText = `${city}`;
-
     const url = `https://world-weather-online-api1.p.rapidapi.com/weather.ashx?q=${city}&num_of_days=3&tp=1&lang=en&aqi=yes&alerts=no&format=json`;
     const options = {
         method: 'GET',
@@ -18,17 +16,29 @@ async function fetchWeather(city){
         const result = await response.json();
         console.log(result);
 
+        document.getElementById('card_para').innerText = `${city}`;
+
         const temperature = result.data.current_condition[0].temp_C;
         const humidity = result.data.current_condition[0].humidity;
         const wind = result.data.current_condition[0].windspeedKmph;
         const feelsLikeC = result.data.current_condition[0].FeelsLikeC;
         const uvIndex = result.data.current_condition[0].uvIndex;
+        const threeAM = result.data.weather[0].hourly[15].FeelsLikeC;
+        const sixAM = result.data.weather[0].hourly[15].FeelsLikeC;
+        const nineAM = result.data.weather[0].hourly[15].FeelsLikeC;
+        const twelveAM = result.data.weather[0].hourly[15].FeelsLikeC;
 
         document.getElementById('temperature').innerText = ` ${temperature}°C`;
         document.getElementById('humidity').innerText = ` ${humidity}%`;
         document.getElementById('windspeed').innerText = ` ${wind}Km/h`;
         document.getElementById('feelslk').innerText = ` ${feelsLikeC}°C`;
         document.getElementById('uvindex').innerText = ` ${uvIndex}`;
+
+        document.getElementById('threeAm').innerText = ` ${threeAM}`;
+        document.getElementById('sixAm').innerText = ` ${sixAM}`;
+        document.getElementById('nineAm').innerText = ` ${nineAM}`;
+        document.getElementById('twelveAm').innerText = ` ${twelveAM}`;
+
 
     } catch (error) {
         console.error(error);
