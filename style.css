@@ -68,22 +68,24 @@ div.nav_bar{
 
     .cards_group .card{
         width:65%;
-        background-color: rgb(114, 206, 245);
+        background: linear-gradient(to right, #58c2c5, #4da2af);
         color:white;
         height:82vh;
         border:2px solid black;
         border-radius:20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     /* upper card part */
     .upper_card{
         display:flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         font-size: 30px;
         box-sizing: border-box;
         margin:0;
         height:18vh;
+        padding-right: 25px;
 
         
     }
@@ -91,13 +93,18 @@ div.nav_bar{
         height:100%;
         width:140px;
     }
-    /* .card_para{
-        padding:0px 30px;
-    } */
+   
+    .upper_card .location-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 25px;
+      }
+      
 
      /* middle card part */
      .middle_card{
-        background-color: rgb(232, 40, 75) ;
+        /* background-color: rgb(232, 40, 75) ; */
         height:30vh;
         display: flex;
         justify-content: space-around;
@@ -136,7 +143,7 @@ div.nav_bar{
      /* lower card part */
 
      .lower_card{
-        background-color: rgb(46, 213, 31) ;
+        /* background-color: rgb(46, 213, 31) ; */
         height:34vh;
         border-radius:20px;
     
@@ -153,8 +160,8 @@ div.nav_bar{
 
     .lower_card p{
         font-size:25px;
-        padding:0px 7px;
-       
+        text-align: left;
+        padding-left: 25px;
         
     }
 
@@ -178,6 +185,20 @@ div.nav_bar{
         height:50px;
         width:50px;
     }
+
+    .midpart,.hourly_item {
+      background-color: #4a9ead;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .lwrdt{
+        padding-right: 25px;
+      }
+      #t1,#t2,#t3,#t4{
+        padding-right: 30px;
+        padding-top: 10px;
+      }
+
  
 
   
@@ -193,3 +214,6 @@ div.nav_bar{
     justify-content: center;
 
   }
+
+
+
