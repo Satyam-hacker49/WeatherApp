@@ -121,8 +121,8 @@ div.nav_bar{
      }
 
      .mdlImg{
-        height:80px;
-        width:100px;
+        width: 40px;
+         height: 40px;
     }
 
      /* lower card part */
@@ -165,8 +165,8 @@ div.nav_bar{
     }
 
     .lwrImg{
-        height:10vh;
-        width:70%;
+        height:50px;
+        width:50px;
     }
  
 
