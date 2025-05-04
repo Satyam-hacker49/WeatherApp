@@ -63,4 +63,35 @@ document.getElementById("search").addEventListener("submit",async function(e){
 
 
 
+function handleSearch(event) {
+    event.preventDefault();
+    const city = document.getElementById('search_input').value.trim();
+    if (city) {
+        console.log("Search for:", city);
+       
+    }
+}
 
+function startListening() {
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.start();
+
+    recognition.onresult = function(event) {
+        const transcript = event.results[0][0].transcript;
+        const formatted = transcript.charAt(0).toUpperCase() + transcript.slice(1);
+        document.getElementById('search_input').value = formatted;
+    };
+
+    recognition.onerror = function(event) {
+        console.error('Speech recognition error:', event.error);
+        alert("Error: " + event.error);
+    };
+
+    recognition.onend = function() {
+        console.log("Speech recognition ended.");
+    };
+}
