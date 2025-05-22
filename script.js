@@ -84,6 +84,8 @@ function startListening() {
     recognition.onresult = function(event) {
         const transcript = event.results[0][0].transcript;
         const formatted = transcript.charAt(0).toUpperCase() + transcript.slice(1);
+        console.log(transcript);
+         console.log(formatted);
         document.getElementById('search_input').value = formatted;
     };
 
