@@ -50,6 +50,7 @@ async function fetchWeather(city){
         const nineAM = result.data.weather[0].hourly[15].FeelsLikeC;
         const twelveAM = result.data.weather[0].hourly[15].FeelsLikeC;
         const moodOfweather = result.data.current_condition[0].weatherDesc[0].value;
+        // const liveweatherimg =result.data.current_condition[0].weatherIconUrl[0].value;
 
         document.getElementById('temperature').innerText = ` ${temperature}°C`;
         document.getElementById('humidity').innerText = ` ${humidity}%`;
@@ -62,6 +63,7 @@ async function fetchWeather(city){
         document.getElementById('nineAm').innerText = ` ${nineAM}`;
         document.getElementById('twelveAm').innerText = ` ${twelveAM}`;
         document.getElementById('weather-mood').innerText = `${moodOfweather}`;
+        // document.getElementById('weather_img').src = `${liveweatherimg}`;
 
          console.log("API Response:", result);
 
