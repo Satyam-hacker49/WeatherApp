@@ -21,6 +21,14 @@ async function fetchWeather(city){
         const result = await response.json();
         console.log(result);
 
+        
+        // Check if city is invalid
+        if (result.data && result.data.error) {
+            alert("City not found. Please enter a valid city name.");
+            console.warn("API error:", result.data.error[0].msg);
+            return;
+        }
+
         document.getElementById('card_para').innerText = `${formattedCity}`;
 
         const temperature = result.data.current_condition[0].temp_C;
@@ -44,6 +52,9 @@ async function fetchWeather(city){
         document.getElementById('nineAm').innerText = ` ${nineAM}`;
         document.getElementById('twelveAm').innerText = ` ${twelveAM}`;
 
+         console.log("API Response:", result);
+
+
 
     } catch (error) {
         console.error(error);
@@ -61,16 +72,6 @@ document.getElementById("search").addEventListener("submit",async function(e){
     }
 });
 
-
-
-function handleSearch(event) {
-    event.preventDefault();
-    const city = document.getElementById('search_input').value.trim();
-    if (city) {
-        console.log("Search for:", city);
-       
-    }
-}
 
 function startListening() {
     const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
