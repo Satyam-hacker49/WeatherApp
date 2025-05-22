@@ -29,6 +29,15 @@ async function fetchWeather(city){
             return;
         }
 
+
+        const returnedCity = result.data.request[0].query;
+        if (!returnedCity.toLowerCase().includes(city.toLowerCase())) {
+        alert("Could not find a matching city. Please enter a valid city name.");
+        return;
+            }
+
+
+
         document.getElementById('card_para').innerText = `${formattedCity}`;
 
         const temperature = result.data.current_condition[0].temp_C;
@@ -40,6 +49,7 @@ async function fetchWeather(city){
         const sixAM = result.data.weather[0].hourly[15].FeelsLikeC;
         const nineAM = result.data.weather[0].hourly[15].FeelsLikeC;
         const twelveAM = result.data.weather[0].hourly[15].FeelsLikeC;
+        const moodOfweather = result.data.current_condition[0].weatherDesc[0].value;
 
         document.getElementById('temperature').innerText = ` ${temperature}°C`;
         document.getElementById('humidity').innerText = ` ${humidity}%`;
@@ -51,6 +61,7 @@ async function fetchWeather(city){
         document.getElementById('sixAm').innerText = ` ${sixAM}`;
         document.getElementById('nineAm').innerText = ` ${nineAM}`;
         document.getElementById('twelveAm').innerText = ` ${twelveAM}`;
+        document.getElementById('weather-mood').innerText = `${moodOfweather}`;
 
          console.log("API Response:", result);
 
