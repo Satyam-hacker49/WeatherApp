@@ -228,7 +228,174 @@ div.nav_bar{
 
 
 
+  @media only screen and (min-width: 859px) and (max-width: 1461px){
+     #temperature{
+    font-size: 65px;
+  }
+    .mdlpr{
+       font-size: 18px;
+        padding:2px;
+    }
+    #one.card{
+      width: 90%;
+    }
+    .hourly_item{
+      width:20%;
+      
+    }
+     #t1,#t2,#t3,#t4{
+       font-size:25px;
+       padding-right: 15px;
+    
+    }
 
+  }
+  
+  
+   @media only screen and (min-width: 704px) and (max-width: 858px){
+     #temperature{
+    font-size: 60px;
+  }
+    .mdlpr{
+       font-size: 18px;
+        padding:2px;
+    }
+    #one.card{
+      width: 90%;
+    }
+    .hourly_item{
+      width:20%;
+      
+    }
+     #t1,#t2,#t3,#t4{
+       font-size:25px;
+       padding-right: 15px;
+    
+    }
+    .cards_group{
+        margin:100px 40px;
+  
+  } 
+   .cards_group .card{
+      width:100%;
+    }
+  }
+
+
+
+@media only screen and (min-width: 448px) and (max-width: 703px){
+     #temperature{
+    font-size: 30px;
+  }
+    .mdlpr{
+       font-size: 11px;
+        padding:2px;
+    }
+    #one.card{
+      width: 90%;
+    }
+    .hourly_item{
+      width:20%;
+      
+    }
+     #t1,#t2,#t3,#t4{
+       font-size:14px;
+       padding-right: 15px;
+    
+    }
+    .cards_group{
+        margin:100px 10px;
+        padding:0;
+        width: 100%;
+  
+  } 
+   .cards_group .card{
+      width: 100%;
+    }
+    .logo{
+    font-size:2rem;
+    color:antiquewhite;
+    padding:0px 10px;
+    
+    width:550px;
+  }
+  .hamburger{
+    position:relative;
+    bottom:40px;
+    
+  }
+  }
+
+  @media only screen and (min-width: 413px) and (max-width: 447px){
+     #temperature{
+    font-size: 30px;
+  }
+    .mdlpr{
+       font-size: 11px;
+        padding:2px;
+    }
+    #one.card{
+      width: 90%;
+    }
+    .hourly_item{
+      width:20%;
+      
+    }
+     #t1,#t2,#t3,#t4{
+       font-size:14px;
+       padding-right: 15px;
+    
+    }
+    .cards_group{
+        margin:100px 5px;
+        padding:0;
+        width: 100%;
+  
+
+  } 
+   .cards_group .card{
+      width: 100%;
+      height:750px;
+    }
+    .logo{
+    font-size:1.5rem;
+    color:antiquewhite;
+    padding:0px 10px;
+    margin:5px 0px;
+    
+    width:300px;
+  }
+  .hamburger{
+    position:relative;
+    /* left:330px; */
+    bottom:50px;
+
+  }
+
+
+  .middle_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+  justify-items: center;
+  height:50vh;
+
+}
+.midpart{
+        height:20vh;
+        width:80%;        
+     }
+
+.hourly_item{
+
+        height:25vh;
+        width:22%;
+        margin:25px 5px ;
+        }
+  }
+
+
+ 
 
 
 
