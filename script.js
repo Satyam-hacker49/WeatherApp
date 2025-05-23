@@ -58,10 +58,10 @@ async function fetchWeather(city){
         document.getElementById('feelslk').innerText = ` ${feelsLikeC}°C`;
         document.getElementById('uvindex').innerText = ` ${uvIndex}`;
 
-        document.getElementById('threeAm').innerText = ` ${threeAM}`;
-        document.getElementById('sixAm').innerText = ` ${sixAM}`;
-        document.getElementById('nineAm').innerText = ` ${nineAM}`;
-        document.getElementById('twelveAm').innerText = ` ${twelveAM}`;
+        document.getElementById('threeAm').innerText = ` ${threeAM}°C`;
+        document.getElementById('sixAm').innerText = ` ${sixAM}°C`;
+        document.getElementById('nineAm').innerText = ` ${nineAM}°C`;
+        document.getElementById('twelveAm').innerText = ` ${twelveAM}°C`;
         document.getElementById('weather-mood').innerText = `${moodOfweather}`;
         // document.getElementById('weather_img').src = `${liveweatherimg}`;
 

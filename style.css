@@ -395,7 +395,153 @@ div.nav_bar{
   }
 
 
- 
+   @media only screen and (min-width: 375px) and (max-width: 412px){
+     #temperature{
+    font-size: 30px;
+  }
+    .mdlpr{
+       font-size: 11px;
+        padding:2px;
+    }
+    #one.card{
+      width: 90%;
+    }
+    .hourly_item{
+      width:20%;
+      
+    }
+     #t1,#t2,#t3,#t4{
+       font-size:11px;
+       padding-right: 15px;
+    
+    }
+   
+    .cards_group{
+        margin:100px 5px;
+        padding:0;
+        width: 100%;
+  
+
+  } 
+   .cards_group .card{
+      width: 100%;
+      height:750px;
+    }
+    .logo{
+    font-size:1.5rem;
+    color:antiquewhite;
+    padding:0px 10px;
+    margin:5px 0px;
+    
+    width:300px;
+  }
+  .hamburger{
+    position:relative;
+    left:330px;
+    bottom:105px;
+
+  }
+
+
+  .middle_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+  justify-items: center;
+  height:50vh;
+
+}
+.midpart{
+        height:20vh;
+        width:80%;        
+     }
+
+.hourly_item{
+
+        height:25vh;
+        width:22%;
+        margin:25px 5px ;
+        }
+p.lwrdt{
+      font-size:18px;
+    }
+  }
+
+
+
+   @media only screen and (min-width: 320px) and (max-width: 374px){
+     #temperature{
+    font-size: 30px;
+  }
+    .mdlpr{
+       font-size: 11px;
+        padding:2px;
+    }
+    #one.card{
+      width: 90%;
+    }
+    .hourly_item{
+      width:20%;
+      
+    }
+     #t1,#t2,#t3,#t4{
+       font-size:11px;
+       padding-right: 15px;
+    
+    }
+   
+    .cards_group{
+        margin:100px 0px;
+        padding:2px;
+        width: 100%;
+  
+
+  } 
+   .cards_group .card{
+      width: 100%;
+      height:750px;
+    }
+    .logo{
+    font-size:1.5rem;
+    color:antiquewhite;
+    padding:0px 10px;
+    margin:5px 0px;
+    
+    width:300px;
+  }
+  .hamburger{
+    position:relative;
+    left:280px;
+    bottom:105px;
+    display:none;
+
+  }
+
+
+  .middle_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+  justify-items: center;
+  height:50vh;
+
+}
+.midpart{
+        height:20vh;
+        width:80%;        
+     }
+
+.hourly_item{
+
+        height:25vh;
+        width:22%;
+        margin:22px 1px ;
+        }
+p.lwrdt{
+      font-size:15px;
+    }
+  }
+
 
 
 
