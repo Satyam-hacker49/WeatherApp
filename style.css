@@ -32,9 +32,16 @@ div.nav_bar{
   #weather-mood{
     font-size: 20px;
     margin:0px 4px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
   #temperature{
     font-size: 70px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  #card_para{
+     color: #D2F1FF; 
+     font-weight: bold;
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
 
   /* content */
@@ -142,9 +149,11 @@ div.nav_bar{
     .mdlpr{
         font-size: 18px;
         padding:10px;
+        
     }
     .mdldt{
         font-size: 18px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     }
 
      /* lower card part */
@@ -169,6 +178,7 @@ div.nav_bar{
         font-size:25px;
         text-align: left;
         padding-left: 25px;
+        /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); */
         
     }
 
@@ -200,6 +210,7 @@ div.nav_bar{
 
       .lwrdt{
         padding-right: 25px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       }
       #t1,#t2,#t3,#t4{
         padding-right: 30px;
