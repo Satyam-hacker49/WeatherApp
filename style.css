@@ -388,9 +388,9 @@ div.nav_bar{
 
 .hourly_item{
 
-        height:25vh;
+        height:22vh;
         width:22%;
-        margin:25px 5px ;
+        margin:15px 5px ;
         }
   }
 
@@ -439,6 +439,7 @@ div.nav_bar{
     position:relative;
     left:330px;
     bottom:105px;
+    display:none;
 
   }
 
@@ -458,9 +459,9 @@ div.nav_bar{
 
 .hourly_item{
 
-        height:25vh;
+        height:22vh;
         width:22%;
-        margin:25px 5px ;
+        margin:10px 1px ;
         }
 p.lwrdt{
       font-size:18px;
@@ -484,6 +485,7 @@ p.lwrdt{
     }
     .hourly_item{
       width:20%;
+     
       
     }
      #t1,#t2,#t3,#t4{
@@ -535,9 +537,9 @@ p.lwrdt{
 
 .hourly_item{
 
-        height:25vh;
+        height:22vh;
         width:22%;
-        margin:22px 1px ;
+        margin:10px 1px ;
         }
 p.lwrdt{
       font-size:15px;
