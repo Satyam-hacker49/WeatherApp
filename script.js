@@ -46,9 +46,9 @@ async function fetchWeather(city){
         const feelsLikeC = result.data.current_condition[0].FeelsLikeC;
         const uvIndex = result.data.current_condition[0].uvIndex;
         const threeAM = result.data.weather[0].hourly[15].FeelsLikeC;
-        const sixAM = result.data.weather[0].hourly[15].FeelsLikeC;
-        const nineAM = result.data.weather[0].hourly[15].FeelsLikeC;
-        const twelveAM = result.data.weather[0].hourly[15].FeelsLikeC;
+        const sixAM = result.data.weather[0].hourly[18].FeelsLikeC;
+        const nineAM = result.data.weather[0].hourly[21].FeelsLikeC;
+        const twelveAM = result.data.weather[0].hourly[0].FeelsLikeC;
         const moodOfweather = result.data.current_condition[0].weatherDesc[0].value;
         // const liveweatherimg =result.data.current_condition[0].weatherIconUrl[0].value;
 
