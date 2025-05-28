@@ -22,7 +22,7 @@ async function fetchWeather(city){
         console.log(result);
 
         
-        // Check if city is invalid
+       
         if (result.data && result.data.error) {
             alert("City not found. Please enter a valid city name.");
             console.warn("API error:", result.data.error[0].msg);
